@@ -13,7 +13,7 @@ body {
 
 label {
     margin: 5vw 0; /* 2% der Viewport-Breite oben und unten */
-    font-size: 5vw; /* 3% der Viewport-Breite als Schriftgröße */
+    font-size: 10vw; /* 3% der Viewport-Breite als Schriftgröße */
 }
 
 .button-container {
