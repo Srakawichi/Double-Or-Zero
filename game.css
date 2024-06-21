@@ -5,15 +5,15 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    margin: 5vw 0;
     background-color: #333;
     color: #fff;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 label {
-    margin: 20px 0;
-    font-style: 200px;
+    margin: 5vw 0; 
+    font-size: 5vw; 
 }
 
 .button-container {
@@ -22,6 +22,6 @@ label {
 }
 
 button {
-    font-size: 80px;
-    margin: 10px;
+    font-size: 5vw; 
+    margin: 5vh 10px; 
 }
