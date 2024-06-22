@@ -1,4 +1,4 @@
-let balance = 1000;
+let balance = 99000;
 let count = 1;
 
 function balanceIsZero(balance) {
@@ -15,7 +15,7 @@ function disabledButton() {
 }
 
 function winLose() {
-    const num = Math.floor(Math.random() * 3) + 1;
+    const num = Math.floor(Math.random() * 2) + 1;
     if (num === 1) {
         console.log("win");
         return true;
@@ -40,6 +40,25 @@ function placeBet(bet) {
         console.log("game over");
         disabledButton()
         document.getElementById('gameOverLabel').style.display = 'block';
+    }
+    if (balance < 10000) {
+        document.getElementById('Level2').style.display = 'none';
+        document.body.style.backgroundColor = '#333';
+    }
+    if (balance >= 10000) {
+        document.getElementById('Level2').style.display = 'block';
+        document.body.style.backgroundColor = 'gray';
+    }
+    if (balance >= 50000) {
+        document.getElementById('Level3').style.display = 'block';
+        document.getElementById('Level2').style.display = 'none';
+        document.getElementById('LevelGod').style.display = 'none';
+        document.body.style.backgroundColor = '#228680';
+    }
+    if (balance >= 100000) {
+        document.getElementById('LevelGod').style.display = 'block';
+        document.getElementById('Level3').style.display = 'none';
+        document.body.style.backgroundImage = "url('C:\Users\rebek\Programme\Python\Baccarat\images\gambelgod.jpeg')";
     }
 }
 
